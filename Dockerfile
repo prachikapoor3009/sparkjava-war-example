@@ -5,7 +5,7 @@ FROM openjdk:11-jre-slim
 WORKDIR /app
 
 # Copy the Spark Java application WAR file into the container
-COPY /harness/arget/sparkjava-hello-world-1.0.war /app/  # Replace 'your-app.war' with the actual file name
+COPY /harness/target/sparkjava-hello-world-1.0.war /app/  # Replace 'your-app.war' with the actual file name
 
 # Expose the port your application will run on
 EXPOSE 8080  # Adjust the port number as needed
